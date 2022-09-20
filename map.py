@@ -6,7 +6,7 @@ states = (os.path.join('data', 'us_states.json'))
 
 m = folium.Map(location=[39.83, -98.58], zoom_start=3)
 
-m.choropleth(
+folium.Choropleth(
     geo_data=states,
     name='choropleth',
     key_on='feature.id',
@@ -18,3 +18,5 @@ m.choropleth(
 folium.LayerControl().add_to(m)
 
 m.save('maps/map.html')
+
+# to run map in browser, go to map.html, dbl click, and start with live server
