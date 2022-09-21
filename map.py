@@ -13,10 +13,10 @@ folium.Choropleth(
     fill_color='YlGn',
     fill_opacity=0.1,
     line_opacity=0.2,
-)
+).add_to(m)
 
-folium.LayerControl().add_to(m)
+# folium.LayerControl().add_to(m)
 
-m.save('maps/map.html')
+# m.save('maps/map.html')
 
 # to run map in browser, go to map.html, dbl click, and start with live server
